@@ -1,1 +1,329 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Aliaksandra Sonets Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a printed campaign book — stone paper, wide expanded headlines, a mono index rail, and image spreads that bleed to the column edge. */
+:root{
+  --paper:#ECEAE6; --ink:#151413; --muted:#6E6A64; --rule:#CFCBC4; --tile:#E2DFDA; --accent:#8A2E1F;
+  --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --body:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#141312;--ink:#ECE9E4;--muted:#9C978F;--rule:#2E2C29;--tile:#1E1C1A;--accent:#E07A5F;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#141312;--ink:#ECE9E4;--muted:#9C978F;--rule:#2E2C29;--tile:#1E1C1A;--accent:#E07A5F;color-scheme:dark}
 
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;font-variation-settings:"wdth" 100;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media (min-width:720px){.wrap{padding-left:max(40px,env(safe-area-inset-left,0px));padding-right:max(40px,env(safe-area-inset-right,0px))}}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+img,video{display:block;width:100%;max-width:100%;height:auto;background:var(--tile)}
+figure{margin:0;min-width:0}
+figcaption{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;color:var(--muted);padding-top:8px}
+
+/* Hero */
+.hero{padding-block:56px 40px;display:grid;gap:28px}
+.hero h1{font-family:var(--display);font-variation-settings:"wdth" 125;font-weight:850;text-transform:uppercase;line-height:.88;letter-spacing:-.02em;font-size:clamp(46px,10.5vw,148px);margin:0;text-wrap:balance}
+.hero .role{font-family:var(--display);font-variation-settings:"wdth" 112;font-weight:500;font-size:clamp(19px,2.4vw,28px);line-height:1.2;margin:0;max-width:28ch}
+.hero-grid{display:grid;gap:28px;grid-template-columns:1fr;border-top:1px solid var(--ink);padding-top:20px}
+@media (min-width:860px){.hero-grid{grid-template-columns:1.25fr 1fr}}
+.hero-grid p{margin:0;max-width:60ch}
+.contact{display:grid;gap:6px;font-family:var(--mono);font-size:13.5px;align-content:start}
+.contact span{color:var(--muted)}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--rule);border-block:1px solid var(--rule);margin-top:8px}
+@media (min-width:860px){.facts{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.fact{background:var(--paper);padding:18px 16px 18px 0;display:grid;gap:4px}
+.fact b{font-family:var(--display);font-variation-settings:"wdth" 125;font-weight:800;font-size:clamp(28px,4vw,44px);line-height:1;font-variant-numeric:tabular-nums}
+
+/* Index */
+.index{padding-block:24px 8px}
+.index ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.index li{border-bottom:1px solid var(--rule)}
+.index a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:14px 0;text-decoration:none}
+.index a strong{font-family:var(--display);font-variation-settings:"wdth" 118;font-weight:700;font-size:clamp(18px,2.4vw,26px);text-transform:uppercase;letter-spacing:-.005em}
+.index a:hover strong{color:var(--accent)}
+
+/* Case */
+.case{padding-block:72px 24px;border-top:1px solid var(--ink);margin-top:56px}
+.case-head{display:grid;gap:14px;margin-bottom:28px}
+.case-head h2{font-family:var(--display);font-variation-settings:"wdth" 125;font-weight:850;text-transform:uppercase;line-height:.92;letter-spacing:-.015em;font-size:clamp(36px,7vw,96px);margin:0;text-wrap:balance}
+.case-head .sub{font-family:var(--display);font-variation-settings:"wdth" 110;font-size:clamp(17px,2vw,22px);margin:0;color:var(--muted)}
+.brief{display:grid;gap:28px;grid-template-columns:1fr;margin-bottom:40px}
+@media (min-width:900px){.brief{grid-template-columns:1.2fr 1fr}}
+.brief p{margin:0 0 14px;max-width:62ch}
+.brief p.lede{font-family:var(--display);font-variation-settings:"wdth" 108;font-size:clamp(19px,2.1vw,24px);line-height:1.35;font-weight:500}
+dl.meta{margin:0;display:grid;gap:0;border-top:1px solid var(--rule);align-content:start}
+dl.meta div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid var(--rule)}
+dl.meta dt{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+dl.meta dd{margin:0;font-size:15px}
+
+.g{display:grid;gap:12px;margin-bottom:12px}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:640px){.g3,.g4{grid-template-columns:repeat(2,minmax(0,1fr))} .g3>.solo{grid-column:1/-1}}
+.white img{background:#fff}
+.pk{background:#fff}
+.pk img{background:#fff;aspect-ratio:16/9;object-fit:contain}
+
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--rule);border-block:1px solid var(--rule);margin:8px 0 0}
+@media (min-width:760px){.stats{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.stat{background:var(--paper);padding:16px 14px 16px 0;display:grid;gap:4px;align-content:start}
+.stat b{font-family:var(--display);font-variation-settings:"wdth" 125;font-weight:800;font-size:clamp(26px,3.6vw,40px);line-height:1;font-variant-numeric:tabular-nums}
+.stat.hl b{color:var(--accent)}
+
+/* Partnerships */
+.partner{display:grid;gap:24px;grid-template-columns:1fr;padding-block:36px;border-top:1px solid var(--rule)}
+.partner:first-of-type{border-top:0;padding-top:0}
+@media (min-width:860px){.partner{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:40px}}
+.partner h3{font-family:var(--display);font-variation-settings:"wdth" 120;font-weight:800;text-transform:uppercase;font-size:clamp(24px,3.2vw,36px);line-height:1;margin:6px 0 14px}
+.partner p{margin:0 0 12px;max-width:56ch}
+.media-row{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr));align-self:start}
+.media-row.one{grid-template-columns:minmax(0,1fr)}
+.vert{max-width:360px}
+
+.logos{font-family:var(--display);font-variation-settings:"wdth" 118;font-weight:700;text-transform:uppercase;font-size:clamp(18px,2.6vw,28px);line-height:1.25;margin:0 0 36px;max-width:30ch}
+
+footer{border-top:1px solid var(--ink);margin-top:72px;padding-block:28px 56px}
+footer .wrap{display:grid;gap:18px}
+footer h2{font-family:var(--display);font-variation-settings:"wdth" 125;font-weight:850;text-transform:uppercase;font-size:clamp(30px,6vw,72px);line-height:.92;margin:0}
+footer .contact{font-size:15px}
+
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+
+<header class="wrap hero">
+  <div class="label">Portfolio · 2024–2026</div>
+  <h1>Aliaksandra<br>Sonets</h1>
+  <p class="role">Head of Marketing, Brand &amp; Creative Lead</p>
+  <div class="hero-grid">
+    <p>I lead brand strategy, creative direction and campaigns for The Miners, a specialty coffee network that grew from 15 to 38 locations in 7 countries while I've run its marketing. I take campaigns from concept to café: the idea, the crew, the shoot, the rollout and the report. Below are four projects I directed.</p>
+    <div class="contact">
+      <div><span>Email&nbsp;&nbsp;</span>sonets0908@gmail.com</div>
+      <div><span>Web&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="https://www.linkedin.com/in/aliaksandra-sonets-2114a31a5/" target="_blank" rel="noopener">LinkedIn profile</a></div>
+      <div><span>Base&nbsp;&nbsp;&nbsp;</span>Prague, CET · open to remote</div>
+    </div>
+  </div>
+  <div class="facts">
+    <div class="fact"><b>15→38</b><span class="label">Locations since I joined</span></div>
+    <div class="fact"><b>7</b><span class="label">Countries</span></div>
+    <div class="fact"><b>+238%</b><span class="label">Seasonal drinks revenue, 2025 YoY</span></div>
+    <div class="fact"><b>+77%</b><span class="label">Instagram followers, 23.6K→41.8K</span></div>
+  </div>
+</header>
+
+<nav class="wrap index" aria-label="Projects">
+  <ol>
+    <li><a href="#countryside"><strong>Countryside Season</strong><span class="label">The Miners × Oatly · Fall 2026</span></a></li>
+    <li><a href="#packaging"><strong>Affordable Premium</strong><span class="label">Retail line · 2025–26</span></a></li>
+    <li><a href="#spring"><strong>Spring Is Served</strong><span class="label">Seasonal campaign · Spring 2026</span></a></li>
+    <li><a href="#partnerships"><strong>Brand Partnerships</strong><span class="label">H&amp;M · NYX · Catrice · Oatly</span></a></li>
+  </ol>
+</nav>
+
+<main>
+<!-- CASE 1 -->
+<section class="wrap case" id="countryside">
+  <div class="case-head">
+    <div class="label">The Miners × Oatly · Fall/Winter 2026 · Seasonal campaign</div>
+    <h2>Countryside Season</h2>
+    <p class="sub">Autumn has been harvested.</p>
+  </div>
+  <div class="brief">
+    <div>
+      <p class="lede">Four drinks, four little stories, all set in a slightly surreal countryside world.</p>
+      <p>The brief was to launch the fall/winter seasonal collection (October–February) as one campaign across the whole network, funded by Oatly. I built the campaign from scratch: a fashion editorial on a working farm, where everyday rural chores are reimagined through each drink's ingredients, styling and a little absurdity. Serious faces, strange situations; never costume-y, never a farm advertisement.</p>
+      <p>The shoot fed every touchpoint: menus, posters, digital screens in cafés, paid social, the influencer program and barista-led tastings for creators in Vienna, Brno and Madrid. It also became a limited-edition printed lookbook that guests take home for free, pairing the editorial with step-by-step recipes for all six drinks of the collection.</p>
+    </div>
+    <dl class="meta">
+      <div><dt>My role</dt><dd>Concept, art direction and production lead: location scouting, casting, crew, props, styling and make-up moodboards, storyboards for each drink, on-set direction. Art-directed product photography and the lookbook.</dd></div>
+      <div><dt>Team</dt><dd>4 models, stylist, hair stylist, make-up artist, photographer, 2 videographers, designer</dd></div>
+      <div><dt>Rollout</dt><dd>38 locations in 7 countries · menus, posters, in-café screens · paid social · creators · tastings in 3 cities</dd></div>
+    </dl>
+  </div>
+
+  <div class="g g3">
+    <figure><img src="a/lb8.jpg" alt="Model sipping a seasonal drink in a barn" loading="lazy"></figure>
+    <figure><img src="a/lb20.jpg" alt="Model with pumpkins and a basket in a field" loading="lazy"></figure>
+    <figure class="solo"><img src="a/lb16.jpg" alt="Hands in yellow gloves holding a Golden Milk" loading="lazy"></figure>
+  </div>
+  <figure class="g"><video src="a/v_caramel.mp4" poster="a/v_caramel_poster.jpg" autoplay muted loop playsinline aria-label="Macro film: Salted Caramel Latte"></video></figure>
+  <div class="g g4">
+    <figure><img src="a/fp1.jpg" alt="Poster: Zesty White Choco Matcha" loading="lazy"></figure>
+    <figure><img src="a/fp2.jpg" alt="Poster: Salted Caramel Latte" loading="lazy"></figure>
+    <figure><img src="a/fp3.jpg" alt="Poster: Golden Milk" loading="lazy"></figure>
+    <figure><img src="a/fp4.jpg" alt="Poster: Pumpkin Spice Latte" loading="lazy"></figure>
+  </div>
+  <div class="g g2">
+    <figure><video src="a/v_matcha.mp4" poster="a/v_matcha_poster.jpg" autoplay muted loop playsinline aria-label="Macro film: Zesty White Choco Matcha"></video></figure>
+    <figure><video src="a/v_pumpkin.mp4" poster="a/v_pumpkin_poster.jpg" autoplay muted loop playsinline aria-label="Lifestyle film: Pumpkin Spice Latte"></video></figure>
+  </div>
+  <div class="g g3">
+    <figure><img src="a/lb13.jpg" alt="Model with a matcha by the farm fence" loading="lazy"></figure>
+    <figure><img src="a/lb21.jpg" alt="Model lying among pumpkins" loading="lazy"></figure>
+    <figure class="solo"><img src="a/lb9.jpg" alt="Model on hay bales" loading="lazy"></figure>
+  </div>
+  <div class="g g2">
+    <figure><img src="a/lb1.jpg" alt="Lookbook cover" loading="lazy"><figcaption>Lookbook cover</figcaption></figure>
+    <figure><img src="a/lb7.jpg" alt="Lookbook recipe page: Salted Caramel Latte" loading="lazy"><figcaption>Recipe page for guests</figcaption></figure>
+  </div>
+</section>
+
+<!-- CASE 2 -->
+<section class="wrap case" id="packaging">
+  <div class="case-head">
+    <div class="label">The Miners · Retail line redesign · 2025–2026</div>
+    <h2>Affordable Premium</h2>
+    <p class="sub">A packaging system for a brand moving up a tier.</p>
+  </div>
+  <div class="brief">
+    <div>
+      <p class="lede">The brand repositioned into affordable premium, and the retail line needed packaging to match.</p>
+      <p>I set the creative direction and wrote the brief: a minimalist system built on bold condensed typography, the brand's arrow, and colour accents coded by coffee origin. I directed and approved the designs across the whole line, from beans and drip bags to matcha and canned Nitro Iced Tea.</p>
+      <p>Two new products launched under the new system: coffee capsules, now sold in the e-shop and all locations, and a Christmas drip-coffee Discovery Set released for the 2025 holidays.</p>
+    </div>
+    <dl class="meta">
+      <div><dt>My role</dt><dd>Creative direction, design brief, art direction and approval across the line</dd></div>
+      <div><dt>Team</dt><dd>In-house designer: final artwork, 3D renders, product film</dd></div>
+      <div><dt>Line</dt><dd>Coffee beans · drip bags · capsules · matcha · Nitro Iced Tea · Christmas Discovery Set</dd></div>
+    </dl>
+  </div>
+  <figure class="g"><img src="a/pk_discovery.jpg" alt="Christmas Discovery Set in three angles" loading="lazy"></figure>
+  <div class="g g3 white">
+    <figure class="pk"><img src="a/pk_capsules.jpg" alt="Capsule box, Ethiopia" loading="lazy"></figure>
+    <figure class="pk"><img src="a/pk_beans.jpg" alt="Coffee bean bag, Colombia" loading="lazy"></figure>
+    <figure class="pk solo"><img src="a/pk_matcha.jpg" alt="Matcha tin" loading="lazy"></figure>
+    <figure class="pk"><img src="a/pk_drip.jpg" alt="Drip bag packaging" loading="lazy"></figure>
+    <figure class="pk"><img src="a/pk_nitro.jpg" alt="Nitro Iced Tea can" loading="lazy"></figure>
+    <figure class="pk solo"><img src="a/pk_can.jpg" alt="Illustrated limited can" loading="lazy"></figure>
+  </div>
+  <figure class="g"><video src="a/v_pack.mp4" poster="a/v_pack_poster.jpg" autoplay muted loop playsinline aria-label="Product film"></video><figcaption>Product film</figcaption></figure>
+</section>
+
+<!-- CASE 3 -->
+<section class="wrap case" id="spring">
+  <div class="case-head">
+    <div class="label">The Miners · Spring 2026 · Seasonal campaign</div>
+    <h2>Spring Is Served</h2>
+    <p class="sub">The Last Supper, retold as a ritual of spring.</p>
+  </div>
+  <div class="brief">
+    <div>
+      <p class="lede">A modern reinterpretation of The Last Supper: not as religion, but as a ritual of taste, seasonality and togetherness.</p>
+      <p>A long communal table became the stage for four new drinks: Crème Brûlée Latte, Strawberry Matcha, Cheesy Peach Tea and Cheesy Raspberry Brew. Each flavour was translated into colour, texture and table styling, with floral compositions made together with a floral studio. Renaissance composition meets the language of modern fashion editorials.</p>
+      <p>The cast eats, drinks and shares the moment on camera, so the drinks read as part of a scene rather than as products on a counter.</p>
+    </div>
+    <dl class="meta">
+      <div><dt>My role</dt><dd>Concept and art direction: references, palette, styling and outfit direction, set design. Led production end to end, including casting and crew. Art-directed product photography.</dd></div>
+      <div><dt>Team</dt><dd>6 models, photographer, videographer, stylist, hair and make-up, floral studio</dd></div>
+      <div><dt>Rollout</dt><dd>All locations · menus, posters, in-café screens · paid social · influencer program</dd></div>
+    </dl>
+  </div>
+  <figure class="g"><img src="a/sp_table.jpg" alt="Six models at a long white table styled with fruit and flowers" loading="lazy"></figure>
+  <div class="g g3">
+    <figure><img src="a/sp_rasp.jpg" alt="Model with raspberries on her fingertips" loading="lazy"></figure>
+    <figure><img src="a/sp_peach.jpg" alt="Model in white gloves with Cheesy Peach Tea" loading="lazy"></figure>
+    <figure class="solo"><img src="a/sp_matcha.jpg" alt="Model drinking Strawberry Matcha" loading="lazy"></figure>
+  </div>
+  <div class="g g3">
+    <figure><img src="a/sp_poster.jpg" alt="Poster: Spring is served" loading="lazy"></figure>
+    <figure><img src="a/sp_p_brulee.jpg" alt="Poster: Crème Brûlée Latte" loading="lazy"></figure>
+    <figure class="solo"><img src="a/sp_p_matcha.jpg" alt="Poster: Strawberry Matcha" loading="lazy"></figure>
+  </div>
+  <figure class="g" style="max-width:420px"><img src="a/sp_bts.jpg" alt="Aliaksandra on set" loading="lazy"><figcaption>Me on set, shot on film</figcaption></figure>
+</section>
+
+<!-- CASE 4 -->
+<section class="wrap case" id="partnerships">
+  <div class="case-head">
+    <div class="label">The Miners · 2025–2026 · Co-branded campaigns</div>
+    <h2>Brand Partnerships</h2>
+    <p class="sub">Fashion and beauty brands came to a coffee chain to reach its audience.</p>
+  </div>
+  <div class="brief">
+    <div>
+      <p class="lede">I ran marketing for every partnership end to end: concept, drinks, visuals, in-café rollout and promotion. Partners approved the final result.</p>
+    </div>
+    <p class="logos">H&amp;M · NYX Professional Makeup · Catrice · Oatly · Lotus Biscoff</p>
+  </div>
+
+  <article class="partner">
+    <div>
+      <div class="label">Catrice · September 2026</div>
+      <h3>Pink Spicy Cacao</h3>
+      <p>A limited drink with a gift mechanic: buy the cacao, get a full-size Catrice product. Launched with an event at our Churchill café, then rolled out to 13 locations for 13 days. Both brands brought their creator networks to the launch.</p>
+      <div class="stats">
+        <div class="stat hl"><b>1,937</b><span class="label">Drinks sold</span></div>
+        <div class="stat hl"><b>272K</b><span class="label">CZK revenue</span></div>
+        <div class="stat"><b>0</b><span class="label">CZK spent by The Miners</span></div>
+        <div class="stat"><b>1.2M</b><span class="label">Reel views · 268.9K unique</span></div>
+      </div>
+    </div>
+    <div class="media-row one"><figure class="vert"><video src="a/v_catrice.mp4" poster="a/v_catrice_poster.jpg" autoplay muted loop playsinline aria-label="Catrice campaign film for in-café screens"></video><figcaption>Film for in-café screens</figcaption></figure></div>
+  </article>
+
+  <article class="partner">
+    <div>
+      <div class="label">Oatly · September 2026</div>
+      <h3>Mont Blanc</h3>
+      <p>A limited drink for a few locations in Prague and Barcelona. The launch Reel ran fully organic, with no paid support.</p>
+      <div class="stats">
+        <div class="stat hl"><b>128K</b><span class="label">Views, organic</span></div>
+        <div class="stat"><b>90K</b><span class="label">Accounts reached</span></div>
+        <div class="stat"><b>1.5K+</b><span class="label">Shares</span></div>
+        <div class="stat"><b>23%</b><span class="label">ER by reach</span></div>
+      </div>
+    </div>
+    <div class="media-row one"><figure class="vert"><video src="a/v_oatly.mp4" poster="a/v_oatly_poster.jpg" autoplay muted loop playsinline aria-label="Mont Blanc launch reel"></video><figcaption>Launch Reel</figcaption></figure></div>
+  </article>
+
+  <article class="partner">
+    <div>
+      <div class="label">NYX Professional Makeup · 2025</div>
+      <h3>Smushy Gloss Drinks</h3>
+      <p>Two limited drinks built on the flavours and colours of NYX lip glosses: Smushy Blush Matcha and Smushy Pine Gloss. Launched with a full-house rave at our Churchill café, with make-up artists, brand activations and around 20 creators.</p>
+    </div>
+    <div class="media-row">
+      <figure><video src="a/v_nyx1.mp4" poster="a/v_nyx1_poster.jpg" autoplay muted loop playsinline aria-label="Smushy Blush Matcha"></video></figure>
+      <figure><video src="a/v_nyx2.mp4" poster="a/v_nyx2_poster.jpg" autoplay muted loop playsinline aria-label="Smushy Pine Gloss"></video></figure>
+    </div>
+  </article>
+
+  <article class="partner">
+    <div>
+      <div class="label">H&amp;M · 2025</div>
+      <h3>Morning Rave</h3>
+      <p>A morning rave at our Charles Bridge café with a special Banana Hot Chocolate. The first 50 guests received an H&amp;M Home candle, and H&amp;M members got 20% off.</p>
+    </div>
+    <div class="media-row one"><figure class="vert"><img src="a/hm.jpg" alt="Morning Rave event poster" loading="lazy"><figcaption>Event poster</figcaption></figure></div>
+  </article>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="label">Contact</div>
+    <h2>Let's talk</h2>
+    <div class="contact">
+      <div><span>Email&nbsp;&nbsp;</span>sonets0908@gmail.com</div>
+      <div><span>Web&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="https://www.linkedin.com/in/aliaksandra-sonets-2114a31a5/" target="_blank" rel="noopener">LinkedIn profile</a></div>
+      <div><span>Lang&nbsp;&nbsp;&nbsp;</span>English C1 · Czech B2 · Russian native</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('video').forEach(function(v){
+    if(reduce){ v.removeAttribute('autoplay'); v.pause(); v.controls = true; }
+  });
+})();
+</script>
+
+</body></html>
